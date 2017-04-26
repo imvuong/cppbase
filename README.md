@@ -85,6 +85,11 @@ Pass these options either directly to the `cmake ..` command, e.g., to build the
 
     cmake -DPROJECT_NAME=<project_name> -DBUILD_TESTS=on ..
 
+Run this command to get code coverage working:
+
+    cmake -DPROJECT_NAME=<project_name> -DBUILD_DOXYGEN_DOCS=on -DBUILD_DEPENDENCIES=on -DBUILD_TESTS=on -DBUILD_COVERAGE_ANALYSIS=on -DCMAKE_BUILD_TYPE=coverage .. && cmake --build .
+
+
 N.B.: Toggling options to build tests using `ccmake` does not work correctly, as the necessarily libraries are not download automagically!
 
 Project structure
