@@ -12,7 +12,7 @@ compiler:
 
 env:
   global:
-    - secure: "aMh+niXXk2m2YvuHC/xVo67wm9hw1+/yUnoqBxPmK5hVzWTefSjYM+sNCZBxybskFg04aBcNt6BycAeyp4+nhiYbw2x45Sxp60Qk6u1h9m4+dvisxCZuftOt8ZbGxCKxXtbANqOg9b7b0b6986506SPD8d7kXG+Q99tN9kf71fE="
+    - secure: "gD+vZ7FYKPl9txdOn4QBwU+xGZzUehczAs5M45KqP8IOwOU2v4RDS2b++xqkDtGm1BYmvfM3513sbN4XUZztZ1NElj+wS8mcVjjsnfwxxw50vuFeQoN4RTY078Yv3wIYZ5rq3g74JoSIwMC8WcqRUd4i3ka7OYwAUR88ZEDhjGEyUNFUtXgQV3YUp5B40cG0oS7afGMO2psAa58pZbkRa76PdSYs5xGNG4gh745gJ9KaSj4wDuWM6zCfkE2o//e1BBsRyswjP2jPd0gPxHiIto9kCNgPombwDHHcemaBTVDVKvrsN1P1opvJbXtNZ3B8Wgd7rgAGT6znL1RsWQ9lPY2YnHitQGCn1UCI61qqbqnM1P10vDxd2h4wmQKrvZy4TYXMzjgBF42BVb/dOCGJOOKmKyjYFddnAP6eXvNhcEQvBLI7CuHt7d1JpRWIcSNYfvsm4ehINfjETQWOQtJusZy0kwZEJOorjrg71idNh9HwlVEXgyVuDw4YMsJk8yvrSZ7DF2CQ/LMKQTS/r+/qk7qKLNkpU190A+iLquTJ17VARVQW/CrP+KyIUXP6gTA+LMZKOSmcl4XVZthPpoyD+29vOYoVwXLWy9sFjxDfUVpy82Ws/8+qXh/6n9VLcQ3p0AHY7dtHnKXgU2uXpBN63/sy145DfPfmu3IO8rAV6Oc="
   matrix:
     - BUILD_TYPE=Debug
     - BUILD_TYPE=Release
@@ -27,9 +27,9 @@ matrix:
 addons:
   coverity_scan:
     project:
-      name: "kartikkumar/cppbase"
+      name: "imvuong/cppbase"
       description: "Build submitted via Travis CI"
-    notification_email: me@kartikkumar.com
+    notification_email: imvuong@gmail.com
     build_command_prepend: "mkdir build; cd build; cmake -DPROJECT_NAME=cppbase -DCMAKE_BUILD_TYPE=$BUILD_TYPE -DBUILD_TESTS=on .."
     build_command: "make"
     branch_pattern: coverity_scan
