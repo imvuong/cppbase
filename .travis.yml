@@ -39,6 +39,7 @@ before_install:
   - bash scripts/install_doxygen.sh
   - chmod ugo+x scripts/check_doxygen.sh
   - if [ "$COVERITY_SCAN_BRANCH_PATTERN" != "coverity_scan" ] && [ "$CXX" == "g++" ] && [ "$BUILD_TYPE" == "Debug" ]; then
+      pip install --user urllib3[secure];
       pip install --user cpp-coveralls;
     fi
 

@@ -1,7 +1,10 @@
 cppbase
 ===
 
-\cond [![MIT license](http://img.shields.io/badge/license-MIT-brightgreen.svg)](http://opensource.org/licenses/MIT) [![Build Status](https://travis-ci.org/imvuong/cppbase.svg?branch=master)](https://travis-ci.org/imvuong/cppbase)[![Coverity Scan Build Status](https://scan.coverity.com/projects/12565/badge.svg)](https://scan.coverity.com/projects/12565) [![Coverage Status](https://coveralls.io/repos/github/imvuong/cppbase/badge.svg?branch=master)](https://coveralls.io/github/imvuong/cppbase?branch=master) \endcond
+[![MIT license](http://img.shields.io/badge/license-MIT-brightgreen.svg)](http://opensource.org/licenses/MIT)
+[![Build Status](https://travis-ci.org/imvuong/cppbase.svg?branch=master)](https://travis-ci.org/imvuong/cppbase)
+[![Coverity Scan Build Status](https://scan.coverity.com/projects/12565/badge.svg)](https://scan.coverity.com/projects/12565)
+[![Coverage Status](https://coveralls.io/repos/github/imvuong/cppbase/badge.svg?branch=master)](https://coveralls.io/github/imvuong/cppbase?branch=master)
 
 `cppbase` is a template for a simple CMake-based C++ project: it can be used as the basis for new projects. An example CMake module is available to make it easy to include your project in other projects (should be customized): [Findcppbase.cmake](https://github.com/kartikkumar/cmake-modules/Modules/Findcppbase.cmake).
 
